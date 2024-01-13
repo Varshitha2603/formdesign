@@ -1,0 +1,63 @@
+body
+{
+    background-color: rgb(184, 218, 128);
+}
+.holetable
+{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(52, 151, 52);
+}
+.productform
+{
+
+    max-width: 200px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.productform input
+{
+    border-radius: 8px;
+    border-color: white;
+    height: 20px;
+    padding: 5px;
+}
+.list
+{
+    max-width: 400px;
+    text-align: center;
+}
+.list thead
+{
+    color: #964B00;
+}
+.list tbody button
+{
+    width: 50px;
+    height: 25px;
+    background-color: rgb(128, 175, 128);
+    box-shadow: 1px 1px rgb(46, 45, 44);
+    border-radius: 15px;
+}
+.list tr:nth-child(even)
+{
+    background-color: rgb(95, 163, 86);
+}
+.productform label
+{
+    color: #964B00;
+    font-size: 17px;
+    font-weight: 700;
+}
+.form-actions-button input
+{
+    background-color: rgb(167, 255, 95);
+    color: rgb(0, 0, 0);
+    font-weight: 700px;
+    height: 30px;
+    border-radius: 30px;
+    box-shadow: 2px 2px grey;
+}

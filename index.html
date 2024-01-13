@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="holetable">
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit()" autocomplete="off" class="productform">
+                    <div>
+                        <label>Product Code</label><label class="validation-error hide" id="productcodeValidationError"></label>
+                        
+                        <input type="text" name="productcode" id="productcode" placeholder="Product Code">
+                    </div>
+                    <div>
+                        <label>Product Name</label>
+                        
+                        <input type="text" name="productname" id="productname" placeholder="Product Name">
+                    </div>
+                    <div>
+                        <label>Qty</label>
+                        <input type="number" name="qty" id="qty" placeholder="Qty">
+                    </div>
+                    <div>
+                        <label>Price</label>
+                        <input type="number" name="price" id="price" placeholder="Price">
+                    </div>
+                    <div class="form-actions-button">
+                        <br>
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="productlist"> 
+                    <thead>
+                        <tr>
+                            <th>Product Code</th>
+                            <th>Product Name</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="form.js"></script>
+</body>
+</html>
